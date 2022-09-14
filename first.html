@@ -19,6 +19,9 @@
     <title>Crypto Traker</title>
 </head>
 
+
+
+
 <body>
     <div class="container">
         <div class="row justify-content-center">
@@ -69,6 +72,46 @@
     <!--We use Axios as your client to make HTTP requests-->
     <script src="app.js"></script>
     <!--To add app.js to this html-->
+    <!--extra material not tought in lecture-->
+    <script type='text/javascript' data-cfasync='false'>
+        window.purechatApi = {
+            l: [],
+            t: [],
+            on: function() {
+                this.l.push(arguments);
+            }
+        };
+        (function() {
+            var done = false;
+            var script = document.createElement('script');
+            script.async = true;
+            script.type = 'text/javascript';
+            script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+            document.getElementsByTagName('HEAD').item(0).appendChild(script);
+            script.onreadystatechange = script.onload = function(e) {
+                if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+                    var w = new PCWidget({
+                        c: '473e1867-1177-490f-b95a-5935a10e49da',
+                        f: true
+                    });
+                    done = true;
+                }
+            };
+        })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NWXGGKVC8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9NWXGGKVC8');
+    </script>
+
 </body>
 
 </html>
