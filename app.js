@@ -41,7 +41,8 @@ const fetchPrice = async(ctype) => { //we had passed the ctype using async
     /*res.innerHTML = `${price}`;
     vol.innerHTML = `${volume}`;
     I will use innerHTML to put whole HTML code of table here*/
-    res.innerHTML = `<tr style="background-color:blue; color:white; font-weight: 700">
+    res.innerHTML = `<tr class="table-primary" 
+    // style="color:white; font-weight: 700">
     <td>Property</td>
     <td>Value</td>
 </tr>
