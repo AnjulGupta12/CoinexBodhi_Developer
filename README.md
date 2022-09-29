@@ -11,4 +11,4 @@
 
 Use this deployed link to go on the website<br>
 
-https://anjulgupta12.github.io/Coinex_Bodhi_CryptoTracker/first.html
+https://anjulgupta12.github.io/CoinexBodhi_Developer/first.html
